@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2024-11-28T16:23:20.350301",
+    "task_type": 6,
+    "metric_value": 664,
+    "seq_num": 125
+  },
+  {
+    "timestamp": "2024-11-28T16:24:50.550487",
+    "task_type": 6,
+    "metric_value": 749,
+    "seq_num": 125
+  },
+  {
+    "timestamp": "2024-11-28T16:29:29.296470",
+    "task_type": 6,
+    "metric_value": 157,
+    "seq_num": 125
+  },
+  {
+    "timestamp": "2024-11-28T16:30:59.495767",
+    "task_type": 6,
+    "metric_value": 232,
+    "seq_num": 125
+  }
+]

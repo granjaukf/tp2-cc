@@ -30,6 +30,10 @@ class TaskExecutor:
         metric_value =  self._collect_metric(task_pdu)
         
         self._send_metric(task_pdu.task_type,metric_value,seq_num)
+
+        if self._check_threshold(task_pdu, metric_value) == True:
+            self._send_alert(task_pdu.task_type, metric_value, seq_num)
+            data_storage.store_alert(self.agent_id, task_pdu.task_type, metric_value, seq_num)
         
         data_storage.store_metric(self.agent_id,task_pdu.task_type,metric_value,seq_num)
 
@@ -192,7 +196,7 @@ class TaskExecutor:
             print(f"[ERROR] Falha ao enviar métrica: {e}")
 
     
-    def _send_alert(self, task_type, metric_value,seq_num, metric_subtype=None):
+    def _send_alert(self, task_type, metric_value,seq_num):
         """Envia alerta para o servidor"""
         try:
             alert_pdu = AlertPDU(
@@ -206,11 +210,10 @@ class TaskExecutor:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as alert_socket:
                 alert_socket.connect((self.server_ip, self.alert_port))
                 alert_socket.sendall(alert_pdu.pack())
-                subtype_str = f" ({metric_subtype})" if metric_subtype else ""
-                print(f"Alerta{subtype_str}enviado ao servidor com seq_num {alert_pdu.seq_num}")
+                print(f"Alerta enviado ao servidor com seq_num {alert_pdu.seq_num}")
             
                 # Aguarda ACK do servidor
-                try:
+                """ try:
                     alert_socket.settimeout(5)
                     ack_data = alert_socket.recv(1024)
                     ack_message = AckPDU.unpack(ack_data)
@@ -222,10 +225,9 @@ class TaskExecutor:
                         print(f"[ERRO] ACK recebido com seq_num incorreto")
                     
                 except socket.timeout:
-                    print("[TIMEOUT] Não recebeu ACK para o alerta")
+                    print("[TIMEOUT] Não recebeu ACK para o alerta")"""
               
         except Exception as e:
-            #subtype_str = f" ({metric_subtype})" if metric_subtype else ""
             print(f"Erro ao enviar o alerta: {e}") 
 
             

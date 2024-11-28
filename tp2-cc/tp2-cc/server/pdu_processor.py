@@ -113,23 +113,23 @@ def process_alert_pdu(data, addr, server_socket=None):
             print("------------------------------")
             return False
 
-        if not validate_seq_num(device_id, alert_pdu.seq_num):
+        """if not validate_seq_num(device_id, alert_pdu.seq_num):
             print(f"[ERRO] Seq_num inválido para alerta. Dispositivo: {device_id}")
             print("------------------------------")
-            return False
+            return False"""
 
         print(f"[ALERTA RECEBIDO] Dispositivo: {device_id}")
         print(f"  Seq_num: {alert_pdu.seq_num}")
         print(f"  Task_type: {alert_pdu.task_type}")
         print(f"  Metric_value: {alert_pdu.metric_value}")
 
-        task_manager.handle_alert(device_id, alert_pdu.seq_num)
+        """task_manager.handle_alert(device_id, alert_pdu.seq_num)"""
 
         # Envia ACK para o alerta
-        ack_pdu = AckPDU(1, alert_pdu.seq_num)
+        """ack_pdu = AckPDU(1, alert_pdu.seq_num)
         server_socket.sendall(ack_pdu.pack())
         print("[ACK ENVIADO PARA ALERTA]")
-        print("------------------------------")
+        print("------------------------------")"""
         return True
     except Exception as e:
         print(f"[ERRO] Falha ao processar alerta: {e}")

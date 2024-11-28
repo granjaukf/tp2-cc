@@ -11,6 +11,7 @@ class TaskManager:
         self._pending_tasks = {}  # (device_id, seq_num) -> Event
         self._pending_metrics = {}  # (device_id, seq_num) -> Event
         self._lock = Lock()
+        self._pending_alerts = {}
         
     def queue_task(self, device_id, task_pdu):
         """Adiciona uma tarefa à fila do dispositivo"""

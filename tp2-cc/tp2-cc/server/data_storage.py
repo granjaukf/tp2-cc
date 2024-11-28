@@ -31,16 +31,16 @@ class DataStorage:
     
         self._append_to_file(filename, data)
     
-    def store_alert(self, device_id, alert_data):
+    def store_alert(self, device_id, task_type, metric_value, seq_num):
         """Armazena um alerta recebido"""
         timestamp = datetime.now().isoformat()
-        filename = os.path.join(self.base_dir, "alerts", f"{device_id}.json")
+        filename = os.path.join(self.base_dir, "alerts", f"{device_id.split()}.json")
         
         data = {
             "timestamp": timestamp,
-            "task_type": alert_data.task_type,
-            "metric_value": alert_data.metric_value,
-            "seq_num": alert_data.seq_num
+            "task_type": task_type,
+            "metric_value": metric_value,
+            "seq_num": seq_num
         }
         
         self._append_to_file(filename, data)
