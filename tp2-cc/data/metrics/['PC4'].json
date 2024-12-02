@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2024-12-02T13:53:08.053403",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 7
+  },
+  {
+    "timestamp": "2024-12-02T13:54:43.706852",
+    "task_type": 6,
+    "metric_value": 4,
+    "seq_num": 13
+  }
+]

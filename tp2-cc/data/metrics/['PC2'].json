@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2024-12-02T13:47:51.432027",
+    "task_type": 6,
+    "metric_value": 2,
+    "seq_num": 8
+  },
+  {
+    "timestamp": "2024-12-02T13:49:27.624440",
+    "task_type": 6,
+    "metric_value": 1,
+    "seq_num": 15
+  },
+  {
+    "timestamp": "2024-12-02T13:50:23.782722",
+    "task_type": 6,
+    "metric_value": 1,
+    "seq_num": 22
+  },
+  {
+    "timestamp": "2024-12-02T13:53:02.979534",
+    "task_type": 6,
+    "metric_value": 86,
+    "seq_num": 8
+  },
+  {
+    "timestamp": "2024-12-02T13:54:29.158475",
+    "task_type": 6,
+    "metric_value": 41,
+    "seq_num": 15
+  }
+]

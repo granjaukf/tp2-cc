@@ -77,26 +77,55 @@ def register_agent(client_socket, agent_id, server_address):
 def process_tasks(client_socket, task_executor, timeout):
     """Processa as tarefas recebidas do servidor"""
     last_task_time = time.time()
+    tasks = []
+    i = 0
+    seq_num = 0
+    periodic = False
+    length = 0
+
     
     while True:
-        try:
-            # Recebe a tarefa
-            task_data, server_addr = client_socket.recvfrom(1024)
-            task_pdu = NetTaskPDU.unpack(task_data)
-            print(f"[TASK RECEIVED] Tarefa recebida com seq_num {task_pdu.seq_num}")
+        #if len(tasks) < 7:
+        if periodic == False:
+            try:
+                # Recebe a tarefa
+                task_data, server_addr = client_socket.recvfrom(1024)
+                task_pdu = NetTaskPDU.unpack(task_data)
+                if len(tasks) > 0 and tasks[len(tasks)-1].seq_num == task_pdu.seq_num:
+                    print("[DUP] Pacote duplicado \n")
+                    if send_task_ack(client_socket, task_pdu, server_addr):
+                        last_task_time = time.time()
+                    continue
+                tasks.append(task_pdu)
+                print(f"[TASK RECEIVED] Tarefa recebida com seq_num {task_pdu.seq_num}")
+                seq_num = task_pdu.seq_num
+                length = length+1
             
-            # Envia ACK para a tarefa
-            if send_task_ack(client_socket, task_pdu, server_addr):
-                task_executor.execute_task(task_pdu)
-                last_task_time = time.time()
+                # Envia ACK para a tarefa
+                if send_task_ack(client_socket, task_pdu, server_addr):
+                    task_executor.execute_task(task_pdu, seq_num)
+                    last_task_time = time.time()
         
-        except socket.timeout:
-            if time.time() - last_task_time > timeout:
-                print("Agente a encerrar por inatividade.")
-                break
-            continue
-        except Exception as e:
-            print(f"[ERRO] Eroo as processar a mensagem: {e}")
+            except socket.timeout:
+                if time.time() - last_task_time >= 30:
+                #if time.time() - last_task_time > timeout:
+                    """print("Agente a encerrar por inatividade.")
+                    break"""
+                    periodic = True
+                continue
+            except Exception as e:
+                print(f"[ERRO] Erro ao processar a mensagem: {e}")
+        else:
+            if i == 0:
+                print(f"Frequência: {tasks[0].freq}")
+                time.sleep(tasks[0].freq)
+            task = tasks[i]
+            i = i+1
+            seq_num = seq_num+1
+            task_executor.execute_task(task, seq_num)
+            if i == length:
+                i = 0
+
 
 
             

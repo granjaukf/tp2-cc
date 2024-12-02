@@ -41,6 +41,11 @@ class TaskManager:
                 
                 # Aguarda ACK por 5 segundos
                 if ack_event.wait(5.0):
+                    with self._lock:
+                        key = (device_id, task_pdu.seq_num)  # Crie a chave que deseja verificar
+                        if key in self._pending_metrics:
+                            print("[DUP] Pacote Duplicado\n")
+                            return True
                     print(f"[ACK RECEBIDO] ACK recebido para a tarefa seq_num {task_pdu.seq_num}\n")
                     
                     # Aguarda métrica por 30 segundos
