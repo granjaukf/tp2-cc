@@ -1,14 +1,1760 @@
 [
   {
-    "timestamp": "2024-12-02T13:53:08.053403",
+    "timestamp": "2024-12-02T16:19:22.949726",
+    "task_type": 0,
+    "metric_value": 33,
+    "seq_num": 2
+  },
+  {
+    "timestamp": "2024-12-02T16:19:25.123250",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 3
+  },
+  {
+    "timestamp": "2024-12-02T16:19:31.051462",
+    "task_type": 3,
+    "metric_value": 1.0502091520260248,
+    "seq_num": 4
+  },
+  {
+    "timestamp": "2024-12-02T16:19:38.494857",
+    "task_type": 4,
+    "metric_value": 0.7642503570908387,
+    "seq_num": 5
+  },
+  {
+    "timestamp": "2024-12-02T16:19:47.652175",
+    "task_type": 5,
+    "metric_value": 11.764705882352942,
+    "seq_num": 6
+  },
+  {
+    "timestamp": "2024-12-02T16:19:53.700062",
     "task_type": 6,
     "metric_value": 5,
     "seq_num": 7
   },
   {
-    "timestamp": "2024-12-02T13:54:43.706852",
+    "timestamp": "2024-12-02T16:20:33.306468",
+    "task_type": 0,
+    "metric_value": 40,
+    "seq_num": 2
+  },
+  {
+    "timestamp": "2024-12-02T16:20:35.425263",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 3
+  },
+  {
+    "timestamp": "2024-12-02T16:21:12.891419",
+    "task_type": 3,
+    "metric_value": 1.0502063516717786,
+    "seq_num": 4
+  },
+  {
+    "timestamp": "2024-12-02T16:21:49.983841",
+    "task_type": 4,
+    "metric_value": 0.9859388712240257,
+    "seq_num": 5
+  },
+  {
+    "timestamp": "2024-12-02T16:23:00.083561",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 6
+  },
+  {
+    "timestamp": "2024-12-02T16:23:00.204963",
+    "task_type": 2,
+    "metric_value": 23,
+    "seq_num": 7
+  },
+  {
+    "timestamp": "2024-12-02T16:23:03.675128",
+    "task_type": 3,
+    "metric_value": 1.0502322555184018,
+    "seq_num": 8
+  },
+  {
+    "timestamp": "2024-12-02T16:23:07.751368",
+    "task_type": 4,
+    "metric_value": 1.0549291557082765,
+    "seq_num": 9
+  },
+  {
+    "timestamp": "2024-12-02T16:23:47.838008",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 10
+  },
+  {
+    "timestamp": "2024-12-02T16:23:47.959516",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 11
+  },
+  {
+    "timestamp": "2024-12-02T16:24:23.101095",
+    "task_type": 3,
+    "metric_value": 1.0501983007365077,
+    "seq_num": 12
+  },
+  {
+    "timestamp": "2024-12-02T16:24:26.876875",
+    "task_type": 4,
+    "metric_value": 0.8409583835396099,
+    "seq_num": 13
+  },
+  {
+    "timestamp": "2024-12-02T16:25:11.967289",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 14
+  },
+  {
+    "timestamp": "2024-12-02T16:25:12.118140",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 15
+  },
+  {
+    "timestamp": "2024-12-02T16:25:20.847143",
+    "task_type": 3,
+    "metric_value": 1.049940036234842,
+    "seq_num": 16
+  },
+  {
+    "timestamp": "2024-12-02T16:25:29.317028",
+    "task_type": 4,
+    "metric_value": 0.905435265650814,
+    "seq_num": 17
+  },
+  {
+    "timestamp": "2024-12-02T16:26:09.385965",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 18
+  },
+  {
+    "timestamp": "2024-12-02T16:26:09.527941",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 19
+  },
+  {
+    "timestamp": "2024-12-02T16:26:13.394040",
+    "task_type": 3,
+    "metric_value": 1.0502322555184018,
+    "seq_num": 20
+  },
+  {
+    "timestamp": "2024-12-02T16:26:16.867728",
+    "task_type": 4,
+    "metric_value": 0.9810892049810912,
+    "seq_num": 21
+  },
+  {
+    "timestamp": "2024-12-02T16:26:56.955056",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 22
+  },
+  {
+    "timestamp": "2024-12-02T16:26:57.099041",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 23
+  },
+  {
+    "timestamp": "2024-12-02T16:27:00.992497",
+    "task_type": 3,
+    "metric_value": 1.0501149983052707,
+    "seq_num": 24
+  },
+  {
+    "timestamp": "2024-12-02T16:27:38.038730",
+    "task_type": 4,
+    "metric_value": 1.1238601987975714,
+    "seq_num": 25
+  },
+  {
+    "timestamp": "2024-12-02T16:28:18.240216",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 27
+  },
+  {
+    "timestamp": "2024-12-02T16:28:21.687650",
+    "task_type": 3,
+    "metric_value": 1.0501734486280092,
+    "seq_num": 28
+  },
+  {
+    "timestamp": "2024-12-02T16:28:25.420002",
+    "task_type": 4,
+    "metric_value": 0.8923773134843234,
+    "seq_num": 29
+  },
+  {
+    "timestamp": "2024-12-02T16:29:05.505213",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 30
+  },
+  {
+    "timestamp": "2024-12-02T16:29:10.623989",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 31
+  },
+  {
+    "timestamp": "2024-12-02T16:29:14.302442",
+    "task_type": 3,
+    "metric_value": 1.0502340058243969,
+    "seq_num": 32
+  },
+  {
+    "timestamp": "2024-12-02T16:30:19.786412",
+    "task_type": 4,
+    "metric_value": 0.9552557083485401,
+    "seq_num": 33
+  },
+  {
+    "timestamp": "2024-12-02T16:31:00.008557",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 35
+  },
+  {
+    "timestamp": "2024-12-02T16:31:03.473433",
+    "task_type": 3,
+    "metric_value": 1.050244857851784,
+    "seq_num": 36
+  },
+  {
+    "timestamp": "2024-12-02T16:31:06.986621",
+    "task_type": 4,
+    "metric_value": 0.8583037832047469,
+    "seq_num": 37
+  },
+  {
+    "timestamp": "2024-12-02T16:31:47.049206",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 38
+  },
+  {
+    "timestamp": "2024-12-02T16:31:47.216495",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 39
+  },
+  {
+    "timestamp": "2024-12-02T16:31:51.185239",
+    "task_type": 3,
+    "metric_value": 1.0502196534874575,
+    "seq_num": 40
+  },
+  {
+    "timestamp": "2024-12-02T16:32:26.915290",
+    "task_type": 4,
+    "metric_value": 1.0990459902352996,
+    "seq_num": 41
+  },
+  {
+    "timestamp": "2024-12-02T16:33:06.979388",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 42
+  },
+  {
+    "timestamp": "2024-12-02T16:33:07.111540",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 43
+  },
+  {
+    "timestamp": "2024-12-02T16:33:15.578049",
+    "task_type": 3,
+    "metric_value": 1.0502315553976374,
+    "seq_num": 44
+  },
+  {
+    "timestamp": "2024-12-02T16:33:19.614982",
+    "task_type": 4,
+    "metric_value": 0.7716308615025755,
+    "seq_num": 45
+  },
+  {
+    "timestamp": "2024-12-02T16:33:59.698846",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 46
+  },
+  {
+    "timestamp": "2024-12-02T16:33:59.844179",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 47
+  },
+  {
+    "timestamp": "2024-12-02T16:34:36.098976",
+    "task_type": 3,
+    "metric_value": 1.0502525594266297,
+    "seq_num": 48
+  },
+  {
+    "timestamp": "2024-12-02T16:34:39.805128",
+    "task_type": 4,
+    "metric_value": 1.1054558576579863,
+    "seq_num": 49
+  },
+  {
+    "timestamp": "2024-12-02T16:35:19.878234",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 50
+  },
+  {
+    "timestamp": "2024-12-02T16:35:20.046980",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 51
+  },
+  {
+    "timestamp": "2024-12-02T16:35:55.573096",
+    "task_type": 3,
+    "metric_value": 1.050232605579134,
+    "seq_num": 52
+  },
+  {
+    "timestamp": "2024-12-02T16:36:30.977636",
+    "task_type": 4,
+    "metric_value": 0.8571131053396625,
+    "seq_num": 53
+  },
+  {
+    "timestamp": "2024-12-02T16:37:11.224644",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 55
+  },
+  {
+    "timestamp": "2024-12-02T16:37:29.708801",
+    "task_type": 3,
+    "metric_value": 1.0502137026335272,
+    "seq_num": 56
+  },
+  {
+    "timestamp": "2024-12-02T16:37:43.732647",
+    "task_type": 4,
+    "metric_value": 0.8833727348322511,
+    "seq_num": 57
+  },
+  {
+    "timestamp": "2024-12-02T16:38:23.951482",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 59
+  },
+  {
+    "timestamp": "2024-12-02T16:38:27.921407",
+    "task_type": 3,
+    "metric_value": 1.050235756136226,
+    "seq_num": 60
+  },
+  {
+    "timestamp": "2024-12-02T16:38:31.722860",
+    "task_type": 4,
+    "metric_value": 0.9703759686138559,
+    "seq_num": 61
+  },
+  {
+    "timestamp": "2024-12-02T16:39:11.805354",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 62
+  },
+  {
+    "timestamp": "2024-12-02T16:39:11.963611",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 63
+  },
+  {
+    "timestamp": "2024-12-02T16:39:15.426657",
+    "task_type": 3,
+    "metric_value": 1.0501580479116477,
+    "seq_num": 64
+  },
+  {
+    "timestamp": "2024-12-02T16:39:20.054738",
+    "task_type": 4,
+    "metric_value": 0.1790799511271601,
+    "seq_num": 65
+  },
+  {
+    "timestamp": "2024-12-02T16:40:00.143480",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 66
+  },
+  {
+    "timestamp": "2024-12-02T16:40:00.291333",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 67
+  },
+  {
+    "timestamp": "2024-12-02T16:40:03.965735",
+    "task_type": 3,
+    "metric_value": 1.0502469582700855,
+    "seq_num": 68
+  },
+  {
+    "timestamp": "2024-12-02T16:40:07.426342",
+    "task_type": 4,
+    "metric_value": 1.2773456469869233,
+    "seq_num": 69
+  },
+  {
+    "timestamp": "2024-12-02T16:40:47.663771",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 71
+  },
+  {
+    "timestamp": "2024-12-02T16:40:51.130963",
+    "task_type": 3,
+    "metric_value": 1.0502329556400998,
+    "seq_num": 72
+  },
+  {
+    "timestamp": "2024-12-02T16:40:54.833750",
+    "task_type": 4,
+    "metric_value": 1.2911338333838285,
+    "seq_num": 73
+  },
+  {
+    "timestamp": "2024-12-02T16:41:35.088383",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 75
+  },
+  {
+    "timestamp": "2024-12-02T16:41:39.076056",
+    "task_type": 3,
+    "metric_value": 1.0502368063261236,
+    "seq_num": 76
+  },
+  {
+    "timestamp": "2024-12-02T16:41:48.073840",
+    "task_type": 4,
+    "metric_value": 1.2461128424530774,
+    "seq_num": 77
+  },
+  {
+    "timestamp": "2024-12-02T16:42:28.159524",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 78
+  },
+  {
+    "timestamp": "2024-12-02T16:42:28.330580",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 79
+  },
+  {
+    "timestamp": "2024-12-02T16:42:32.037368",
+    "task_type": 3,
+    "metric_value": 1.050197250623616,
+    "seq_num": 80
+  },
+  {
+    "timestamp": "2024-12-02T16:42:35.500611",
+    "task_type": 4,
+    "metric_value": 0.9376407157451303,
+    "seq_num": 81
+  },
+  {
+    "timestamp": "2024-12-02T16:43:20.576755",
+    "task_type": 0,
+    "metric_value": 4,
+    "seq_num": 82
+  },
+  {
+    "timestamp": "2024-12-02T16:43:20.739776",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 83
+  },
+  {
+    "timestamp": "2024-12-02T16:43:29.455213",
+    "task_type": 3,
+    "metric_value": 1.050212652489834,
+    "seq_num": 84
+  },
+  {
+    "timestamp": "2024-12-02T16:43:33.370942",
+    "task_type": 4,
+    "metric_value": 0.8605492013791551,
+    "seq_num": 85
+  },
+  {
+    "timestamp": "2024-12-02T16:44:13.450100",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 86
+  },
+  {
+    "timestamp": "2024-12-02T16:44:13.595846",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 87
+  },
+  {
+    "timestamp": "2024-12-02T16:44:17.058714",
+    "task_type": 3,
+    "metric_value": 1.050131797731726,
+    "seq_num": 88
+  },
+  {
+    "timestamp": "2024-12-02T16:44:21.031578",
+    "task_type": 4,
+    "metric_value": 1.194218206550617,
+    "seq_num": 89
+  },
+  {
+    "timestamp": "2024-12-02T16:45:06.124920",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 90
+  },
+  {
+    "timestamp": "2024-12-02T16:45:11.270977",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 91
+  },
+  {
+    "timestamp": "2024-12-02T16:45:15.204612",
+    "task_type": 3,
+    "metric_value": 1.0502459080598845,
+    "seq_num": 92
+  },
+  {
+    "timestamp": "2024-12-02T16:45:24.626279",
+    "task_type": 4,
+    "metric_value": 1.3905113135370548,
+    "seq_num": 93
+  },
+  {
+    "timestamp": "2024-12-02T16:46:04.713385",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 94
+  },
+  {
+    "timestamp": "2024-12-02T16:46:04.876890",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 95
+  },
+  {
+    "timestamp": "2024-12-02T16:46:13.597873",
+    "task_type": 3,
+    "metric_value": 1.0501125484338205,
+    "seq_num": 96
+  },
+  {
+    "timestamp": "2024-12-02T16:46:17.371502",
+    "task_type": 4,
+    "metric_value": 1.2127102870603206,
+    "seq_num": 97
+  },
+  {
+    "timestamp": "2024-12-02T16:46:57.447230",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 98
+  },
+  {
+    "timestamp": "2024-12-02T16:46:57.590054",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 99
+  },
+  {
+    "timestamp": "2024-12-02T16:47:01.560137",
+    "task_type": 3,
+    "metric_value": 1.0502354060733934,
+    "seq_num": 100
+  },
+  {
+    "timestamp": "2024-12-02T16:47:10.276378",
+    "task_type": 4,
+    "metric_value": 0.9598466126162442,
+    "seq_num": 101
+  },
+  {
+    "timestamp": "2024-12-02T16:47:50.345469",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 102
+  },
+  {
+    "timestamp": "2024-12-02T16:47:55.512548",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 103
+  },
+  {
+    "timestamp": "2024-12-02T16:48:00.035156",
+    "task_type": 3,
+    "metric_value": 1.0502459080598845,
+    "seq_num": 104
+  },
+  {
+    "timestamp": "2024-12-02T16:48:03.830251",
+    "task_type": 4,
+    "metric_value": 0.3106875334146314,
+    "seq_num": 105
+  },
+  {
+    "timestamp": "2024-12-02T16:48:43.919122",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 106
+  },
+  {
+    "timestamp": "2024-12-02T16:48:49.062408",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 107
+  },
+  {
+    "timestamp": "2024-12-02T16:48:58.094316",
+    "task_type": 3,
+    "metric_value": 1.0502119523952054,
+    "seq_num": 108
+  },
+  {
+    "timestamp": "2024-12-02T16:49:32.491215",
+    "task_type": 4,
+    "metric_value": 1.3082993548994524,
+    "seq_num": 109
+  },
+  {
+    "timestamp": "2024-12-02T16:50:17.572407",
+    "task_type": 0,
+    "metric_value": 3,
+    "seq_num": 110
+  },
+  {
+    "timestamp": "2024-12-02T16:50:17.715349",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 111
+  },
+  {
+    "timestamp": "2024-12-02T16:50:21.442190",
+    "task_type": 3,
+    "metric_value": 1.0501720485442199,
+    "seq_num": 112
+  },
+  {
+    "timestamp": "2024-12-02T16:50:25.172958",
+    "task_type": 4,
+    "metric_value": 0.9460930766867783,
+    "seq_num": 113
+  },
+  {
+    "timestamp": "2024-12-02T16:51:05.249479",
+    "task_type": 0,
+    "metric_value": 42,
+    "seq_num": 114
+  },
+  {
+    "timestamp": "2024-12-02T16:51:20.384401",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 115
+  },
+  {
+    "timestamp": "2024-12-02T16:51:29.071582",
+    "task_type": 3,
+    "metric_value": 1.0502140526818915,
+    "seq_num": 116
+  },
+  {
+    "timestamp": "2024-12-02T16:51:33.042254",
+    "task_type": 4,
+    "metric_value": 1.8934514310037975,
+    "seq_num": 117
+  },
+  {
+    "timestamp": "2024-12-02T16:52:13.124499",
+    "task_type": 0,
+    "metric_value": 8,
+    "seq_num": 118
+  },
+  {
+    "timestamp": "2024-12-02T16:52:13.291539",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 119
+  },
+  {
+    "timestamp": "2024-12-02T16:52:17.203547",
+    "task_type": 3,
+    "metric_value": 1.0502221038586774,
+    "seq_num": 120
+  },
+  {
+    "timestamp": "2024-12-02T17:51:49.404240",
+    "task_type": 0,
+    "metric_value": 7,
+    "seq_num": 8
+  },
+  {
+    "timestamp": "2024-12-02T17:51:49.539581",
+    "task_type": 2,
+    "metric_value": 23,
+    "seq_num": 9
+  },
+  {
+    "timestamp": "2024-12-02T17:51:58.008291",
+    "task_type": 3,
+    "metric_value": 1.0501545478118337,
+    "seq_num": 10
+  },
+  {
+    "timestamp": "2024-12-02T17:52:06.732724",
+    "task_type": 4,
+    "metric_value": 1.124477975454618,
+    "seq_num": 11
+  },
+  {
+    "timestamp": "2024-12-02T17:52:41.946389",
+    "task_type": 5,
+    "metric_value": 6.617647058823529,
+    "seq_num": 12
+  },
+  {
+    "timestamp": "2024-12-02T17:52:43.002408",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 13
+  },
+  {
+    "timestamp": "2024-12-02T17:53:23.094513",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 14
+  },
+  {
+    "timestamp": "2024-12-02T17:53:23.240249",
+    "task_type": 2,
+    "metric_value": 27,
+    "seq_num": 15
+  },
+  {
+    "timestamp": "2024-12-02T17:53:27.275829",
+    "task_type": 3,
+    "metric_value": 1.0502035513324663,
+    "seq_num": 16
+  },
+  {
+    "timestamp": "2024-12-02T17:53:34.142347",
+    "task_type": 4,
+    "metric_value": 1.1311664471098524,
+    "seq_num": 17
+  },
+  {
+    "timestamp": "2024-12-02T17:53:37.991745",
+    "task_type": 5,
+    "metric_value": 6.617647058823529,
+    "seq_num": 18
+  },
+  {
+    "timestamp": "2024-12-02T17:53:49.057588",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 19
+  },
+  {
+    "timestamp": "2024-12-02T17:54:34.150633",
+    "task_type": 0,
+    "metric_value": 4,
+    "seq_num": 20
+  },
+  {
+    "timestamp": "2024-12-02T17:54:34.277238",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 21
+  },
+  {
+    "timestamp": "2024-12-02T17:54:38.006364",
+    "task_type": 3,
+    "metric_value": 1.0501874496712298,
+    "seq_num": 22
+  },
+  {
+    "timestamp": "2024-12-02T17:54:41.502139",
+    "task_type": 4,
+    "metric_value": 0.9355610229186259,
+    "seq_num": 23
+  },
+  {
+    "timestamp": "2024-12-02T17:54:47.682473",
+    "task_type": 5,
+    "metric_value": 8.823529411764707,
+    "seq_num": 24
+  },
+  {
+    "timestamp": "2024-12-02T17:54:48.737865",
+    "task_type": 6,
+    "metric_value": 6,
+    "seq_num": 25
+  },
+  {
+    "timestamp": "2024-12-02T17:55:28.823571",
+    "task_type": 0,
+    "metric_value": 26,
+    "seq_num": 26
+  },
+  {
+    "timestamp": "2024-12-02T17:55:28.989310",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 27
+  },
+  {
+    "timestamp": "2024-12-02T17:55:33.514466",
+    "task_type": 3,
+    "metric_value": 1.050108698658922,
+    "seq_num": 28
+  },
+  {
+    "timestamp": "2024-12-02T17:56:08.676403",
+    "task_type": 4,
+    "metric_value": 1.307309250643138,
+    "seq_num": 29
+  },
+  {
+    "timestamp": "2024-12-02T17:56:13.194961",
+    "task_type": 5,
+    "metric_value": 4.411764705882353,
+    "seq_num": 30
+  },
+  {
+    "timestamp": "2024-12-02T17:56:14.250475",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 31
+  },
+  {
+    "timestamp": "2024-12-02T17:56:54.328398",
+    "task_type": 0,
+    "metric_value": 11,
+    "seq_num": 32
+  },
+  {
+    "timestamp": "2024-12-02T17:56:59.519380",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 33
+  },
+  {
+    "timestamp": "2024-12-02T17:57:03.741527",
+    "task_type": 3,
+    "metric_value": 1.050177998926107,
+    "seq_num": 34
+  },
+  {
+    "timestamp": "2024-12-02T17:57:13.230994",
+    "task_type": 4,
+    "metric_value": 1.1346541363588722,
+    "seq_num": 35
+  },
+  {
+    "timestamp": "2024-12-02T17:57:17.234463",
+    "task_type": 5,
+    "metric_value": 6.617647058823529,
+    "seq_num": 36
+  },
+  {
+    "timestamp": "2024-12-02T17:57:18.285609",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 37
+  },
+  {
+    "timestamp": "2024-12-02T17:57:58.475550",
+    "task_type": 0,
+    "metric_value": 12,
+    "seq_num": 38
+  },
+  {
+    "timestamp": "2024-12-02T17:57:58.687356",
+    "task_type": 2,
+    "metric_value": 23,
+    "seq_num": 39
+  },
+  {
+    "timestamp": "2024-12-02T17:58:34.636217",
+    "task_type": 3,
+    "metric_value": 1.05019305019305,
+    "seq_num": 40
+  },
+  {
+    "timestamp": "2024-12-02T17:58:51.351346",
+    "task_type": 4,
+    "metric_value": 1.3021127811187048,
+    "seq_num": 41
+  },
+  {
+    "timestamp": "2024-12-02T17:58:59.844835",
+    "task_type": 5,
+    "metric_value": 6.25,
+    "seq_num": 42
+  },
+  {
+    "timestamp": "2024-12-02T17:59:00.902413",
+    "task_type": 6,
+    "metric_value": 6,
+    "seq_num": 43
+  },
+  {
+    "timestamp": "2024-12-02T17:59:40.988431",
+    "task_type": 0,
+    "metric_value": 5,
+    "seq_num": 44
+  },
+  {
+    "timestamp": "2024-12-02T17:59:41.114045",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 45
+  },
+  {
+    "timestamp": "2024-12-02T18:00:16.202175",
+    "task_type": 3,
+    "metric_value": 1.050235756136226,
+    "seq_num": 46
+  },
+  {
+    "timestamp": "2024-12-02T18:00:24.932728",
+    "task_type": 4,
+    "metric_value": 1.1313602814700605,
+    "seq_num": 47
+  },
+  {
+    "timestamp": "2024-12-02T18:00:28.749138",
+    "task_type": 5,
+    "metric_value": 5.514705882352941,
+    "seq_num": 48
+  },
+  {
+    "timestamp": "2024-12-02T18:00:29.808546",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 49
+  },
+  {
+    "timestamp": "2024-12-02T18:01:09.890429",
+    "task_type": 0,
+    "metric_value": 17,
+    "seq_num": 50
+  },
+  {
+    "timestamp": "2024-12-02T18:01:10.025985",
+    "task_type": 2,
+    "metric_value": 23,
+    "seq_num": 51
+  },
+  {
+    "timestamp": "2024-12-02T18:01:13.556855",
+    "task_type": 3,
+    "metric_value": 1.050178348950671,
+    "seq_num": 52
+  },
+  {
+    "timestamp": "2024-12-02T18:01:17.470699",
+    "task_type": 4,
+    "metric_value": 0.8748917297261147,
+    "seq_num": 53
+  },
+  {
+    "timestamp": "2024-12-02T18:01:23.433898",
+    "task_type": 5,
+    "metric_value": 9.926470588235293,
+    "seq_num": 54
+  },
+  {
+    "timestamp": "2024-12-02T18:01:24.488373",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 55
+  },
+  {
+    "timestamp": "2024-12-02T18:02:04.578282",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 56
+  },
+  {
+    "timestamp": "2024-12-02T18:02:04.733927",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 57
+  },
+  {
+    "timestamp": "2024-12-02T18:02:08.219799",
+    "task_type": 3,
+    "metric_value": 1.050224204185967,
+    "seq_num": 58
+  },
+  {
+    "timestamp": "2024-12-02T18:02:14.047044",
+    "task_type": 4,
+    "metric_value": 1.5379567711767297,
+    "seq_num": 59
+  },
+  {
+    "timestamp": "2024-12-02T18:02:19.123593",
+    "task_type": 5,
+    "metric_value": 6.25,
+    "seq_num": 60
+  },
+  {
+    "timestamp": "2024-12-02T18:02:20.184743",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 61
+  },
+  {
+    "timestamp": "2024-12-02T18:03:00.261414",
+    "task_type": 0,
+    "metric_value": 19,
+    "seq_num": 62
+  },
+  {
+    "timestamp": "2024-12-02T18:03:05.428889",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 63
+  },
+  {
+    "timestamp": "2024-12-02T18:03:09.414541",
+    "task_type": 3,
+    "metric_value": 1.0501951504041331,
+    "seq_num": 64
+  },
+  {
+    "timestamp": "2024-12-02T18:03:12.867614",
+    "task_type": 4,
+    "metric_value": 0.8877974076274326,
+    "seq_num": 65
+  },
+  {
+    "timestamp": "2024-12-02T18:03:16.400842",
+    "task_type": 5,
+    "metric_value": 7.720588235294118,
+    "seq_num": 66
+  },
+  {
+    "timestamp": "2024-12-02T18:03:17.453917",
     "task_type": 6,
     "metric_value": 4,
-    "seq_num": 13
+    "seq_num": 67
+  },
+  {
+    "timestamp": "2024-12-02T18:03:57.539132",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 68
+  },
+  {
+    "timestamp": "2024-12-02T18:03:57.713488",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 69
+  },
+  {
+    "timestamp": "2024-12-02T18:04:02.085120",
+    "task_type": 3,
+    "metric_value": 1.0502063516717786,
+    "seq_num": 70
+  },
+  {
+    "timestamp": "2024-12-02T18:04:05.628360",
+    "task_type": 4,
+    "metric_value": 0.9984441130072499,
+    "seq_num": 71
+  },
+  {
+    "timestamp": "2024-12-02T18:04:09.862130",
+    "task_type": 5,
+    "metric_value": 3.676470588235294,
+    "seq_num": 72
+  },
+  {
+    "timestamp": "2024-12-02T18:04:10.927031",
+    "task_type": 6,
+    "metric_value": 2,
+    "seq_num": 73
+  },
+  {
+    "timestamp": "2024-12-02T18:04:51.039337",
+    "task_type": 0,
+    "metric_value": 37,
+    "seq_num": 74
+  },
+  {
+    "timestamp": "2024-12-02T18:05:01.245230",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 75
+  },
+  {
+    "timestamp": "2024-12-02T18:05:05.310399",
+    "task_type": 3,
+    "metric_value": 1.050197600661013,
+    "seq_num": 76
+  },
+  {
+    "timestamp": "2024-12-02T18:05:09.524431",
+    "task_type": 4,
+    "metric_value": 1.0519374341970693,
+    "seq_num": 77
+  },
+  {
+    "timestamp": "2024-12-02T18:05:18.452909",
+    "task_type": 5,
+    "metric_value": 8.455882352941176,
+    "seq_num": 78
+  },
+  {
+    "timestamp": "2024-12-02T18:05:19.559264",
+    "task_type": 6,
+    "metric_value": 2,
+    "seq_num": 79
+  },
+  {
+    "timestamp": "2024-12-02T18:05:59.651774",
+    "task_type": 0,
+    "metric_value": 42,
+    "seq_num": 80
+  },
+  {
+    "timestamp": "2024-12-02T18:05:59.865801",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 81
+  },
+  {
+    "timestamp": "2024-12-02T18:06:14.595841",
+    "task_type": 3,
+    "metric_value": 1.0502077518470347,
+    "seq_num": 82
+  },
+  {
+    "timestamp": "2024-12-02T18:06:23.346827",
+    "task_type": 4,
+    "metric_value": 2.426124549294378,
+    "seq_num": 83
+  },
+  {
+    "timestamp": "2024-12-02T18:06:26.884922",
+    "task_type": 5,
+    "metric_value": 8.088235294117647,
+    "seq_num": 84
+  },
+  {
+    "timestamp": "2024-12-02T18:06:27.957030",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 85
+  },
+  {
+    "timestamp": "2024-12-02T18:07:08.038309",
+    "task_type": 0,
+    "metric_value": 3,
+    "seq_num": 86
+  },
+  {
+    "timestamp": "2024-12-02T18:07:08.194289",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 87
+  },
+  {
+    "timestamp": "2024-12-02T18:07:12.381787",
+    "task_type": 3,
+    "metric_value": 1.0501818492091426,
+    "seq_num": 88
+  },
+  {
+    "timestamp": "2024-12-02T18:07:16.528327",
+    "task_type": 4,
+    "metric_value": 0.8595275093450461,
+    "seq_num": 89
+  },
+  {
+    "timestamp": "2024-12-02T18:07:21.372996",
+    "task_type": 5,
+    "metric_value": 3.3088235294117645,
+    "seq_num": 90
+  },
+  {
+    "timestamp": "2024-12-02T18:07:22.429178",
+    "task_type": 6,
+    "metric_value": 0,
+    "seq_num": 91
+  },
+  {
+    "timestamp": "2024-12-02T18:08:07.512364",
+    "task_type": 0,
+    "metric_value": 2,
+    "seq_num": 92
+  },
+  {
+    "timestamp": "2024-12-02T18:08:17.679366",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 93
+  },
+  {
+    "timestamp": "2024-12-02T18:08:21.997842",
+    "task_type": 3,
+    "metric_value": 1.0502088019809273,
+    "seq_num": 94
+  },
+  {
+    "timestamp": "2024-12-02T18:08:30.660532",
+    "task_type": 4,
+    "metric_value": 0.8779067283472318,
+    "seq_num": 95
+  },
+  {
+    "timestamp": "2024-12-02T18:08:34.909619",
+    "task_type": 5,
+    "metric_value": 5.514705882352941,
+    "seq_num": 96
+  },
+  {
+    "timestamp": "2024-12-02T18:08:35.974472",
+    "task_type": 6,
+    "metric_value": 6,
+    "seq_num": 97
+  },
+  {
+    "timestamp": "2024-12-02T18:09:16.150880",
+    "task_type": 0,
+    "metric_value": 16,
+    "seq_num": 98
+  },
+  {
+    "timestamp": "2024-12-02T18:09:16.326902",
+    "task_type": 2,
+    "metric_value": 23,
+    "seq_num": 99
+  },
+  {
+    "timestamp": "2024-12-02T18:09:20.304427",
+    "task_type": 3,
+    "metric_value": 1.0499368874517325,
+    "seq_num": 100
+  },
+  {
+    "timestamp": "2024-12-02T18:09:55.729843",
+    "task_type": 4,
+    "metric_value": 1.1404646382040284,
+    "seq_num": 101
+  },
+  {
+    "timestamp": "2024-12-02T18:10:00.748604",
+    "task_type": 5,
+    "metric_value": 6.985294117647059,
+    "seq_num": 102
+  },
+  {
+    "timestamp": "2024-12-02T18:10:01.819487",
+    "task_type": 6,
+    "metric_value": 1,
+    "seq_num": 103
+  },
+  {
+    "timestamp": "2024-12-02T18:10:42.080784",
+    "task_type": 0,
+    "metric_value": 20,
+    "seq_num": 104
+  },
+  {
+    "timestamp": "2024-12-02T18:10:42.356498",
+    "task_type": 2,
+    "metric_value": 25,
+    "seq_num": 105
+  },
+  {
+    "timestamp": "2024-12-02T18:10:51.340077",
+    "task_type": 3,
+    "metric_value": 1.0497658319554006,
+    "seq_num": 106
+  },
+  {
+    "timestamp": "2024-12-02T18:10:55.312823",
+    "task_type": 4,
+    "metric_value": 1.6395429625949556,
+    "seq_num": 107
+  },
+  {
+    "timestamp": "2024-12-02T18:10:59.388009",
+    "task_type": 5,
+    "metric_value": 5.147058823529412,
+    "seq_num": 108
+  },
+  {
+    "timestamp": "2024-12-02T18:11:00.445823",
+    "task_type": 6,
+    "metric_value": 4,
+    "seq_num": 109
+  },
+  {
+    "timestamp": "2024-12-02T18:11:40.706928",
+    "task_type": 0,
+    "metric_value": 46,
+    "seq_num": 110
+  },
+  {
+    "timestamp": "2024-12-02T18:11:40.941572",
+    "task_type": 2,
+    "metric_value": 25,
+    "seq_num": 111
+  },
+  {
+    "timestamp": "2024-12-02T18:11:44.563233",
+    "task_type": 3,
+    "metric_value": 1.050265862412868,
+    "seq_num": 112
+  },
+  {
+    "timestamp": "2024-12-02T18:11:53.289337",
+    "task_type": 4,
+    "metric_value": 0.8416152003779985,
+    "seq_num": 113
+  },
+  {
+    "timestamp": "2024-12-02T18:11:58.617960",
+    "task_type": 5,
+    "metric_value": 7.720588235294118,
+    "seq_num": 114
+  },
+  {
+    "timestamp": "2024-12-02T18:11:59.688092",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 115
+  },
+  {
+    "timestamp": "2024-12-02T18:12:39.784521",
+    "task_type": 0,
+    "metric_value": 36,
+    "seq_num": 116
+  },
+  {
+    "timestamp": "2024-12-02T18:12:39.972545",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 117
+  },
+  {
+    "timestamp": "2024-12-02T18:12:44.971883",
+    "task_type": 3,
+    "metric_value": 1.0501811491555817,
+    "seq_num": 118
+  },
+  {
+    "timestamp": "2024-12-02T18:13:20.633019",
+    "task_type": 4,
+    "metric_value": 1.393829702153407,
+    "seq_num": 119
+  },
+  {
+    "timestamp": "2024-12-02T18:14:38.238510",
+    "task_type": 5,
+    "metric_value": 7.352941176470588,
+    "seq_num": 120
+  },
+  {
+    "timestamp": "2024-12-02T18:14:39.298380",
+    "task_type": 6,
+    "metric_value": 7,
+    "seq_num": 121
+  },
+  {
+    "timestamp": "2024-12-02T18:15:19.382298",
+    "task_type": 0,
+    "metric_value": 7,
+    "seq_num": 122
+  },
+  {
+    "timestamp": "2024-12-02T18:15:19.569731",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 123
+  },
+  {
+    "timestamp": "2024-12-02T18:15:23.802800",
+    "task_type": 3,
+    "metric_value": 1.0502025012090743,
+    "seq_num": 124
+  },
+  {
+    "timestamp": "2024-12-02T18:15:27.814243",
+    "task_type": 4,
+    "metric_value": 0.903725154684998,
+    "seq_num": 125
+  },
+  {
+    "timestamp": "2024-12-02T18:15:31.579542",
+    "task_type": 5,
+    "metric_value": 5.882352941176471,
+    "seq_num": 126
+  },
+  {
+    "timestamp": "2024-12-02T18:15:32.637244",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 127
+  },
+  {
+    "timestamp": "2024-12-02T18:16:17.708255",
+    "task_type": 0,
+    "metric_value": 24,
+    "seq_num": 128
+  },
+  {
+    "timestamp": "2024-12-02T18:16:22.883938",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 129
+  },
+  {
+    "timestamp": "2024-12-02T18:16:36.814961",
+    "task_type": 3,
+    "metric_value": 1.050231905457903,
+    "seq_num": 130
+  },
+  {
+    "timestamp": "2024-12-02T18:17:23.451295",
+    "task_type": 4,
+    "metric_value": 0.9188131059892057,
+    "seq_num": 131
+  },
+  {
+    "timestamp": "2024-12-02T18:18:30.124029",
+    "task_type": 5,
+    "metric_value": 14.338235294117647,
+    "seq_num": 132
+  },
+  {
+    "timestamp": "2024-12-02T18:18:41.182527",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 133
+  },
+  {
+    "timestamp": "2024-12-02T18:19:21.269699",
+    "task_type": 0,
+    "metric_value": 3,
+    "seq_num": 134
+  },
+  {
+    "timestamp": "2024-12-02T18:19:21.420582",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 135
+  },
+  {
+    "timestamp": "2024-12-02T18:19:55.845923",
+    "task_type": 3,
+    "metric_value": 1.0499473834688788,
+    "seq_num": 136
+  },
+  {
+    "timestamp": "2024-12-02T18:20:00.087488",
+    "task_type": 4,
+    "metric_value": 1.7020510382516967,
+    "seq_num": 137
+  },
+  {
+    "timestamp": "2024-12-02T18:20:03.868799",
+    "task_type": 5,
+    "metric_value": 5.514705882352941,
+    "seq_num": 138
+  },
+  {
+    "timestamp": "2024-12-02T18:20:04.936961",
+    "task_type": 6,
+    "metric_value": 3,
+    "seq_num": 139
+  },
+  {
+    "timestamp": "2024-12-02T18:20:45.022725",
+    "task_type": 0,
+    "metric_value": 13,
+    "seq_num": 140
+  },
+  {
+    "timestamp": "2024-12-02T18:20:45.188767",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 141
+  },
+  {
+    "timestamp": "2024-12-02T18:20:49.147855",
+    "task_type": 3,
+    "metric_value": 1.0501706484641637,
+    "seq_num": 142
+  },
+  {
+    "timestamp": "2024-12-02T18:20:52.937887",
+    "task_type": 4,
+    "metric_value": 0.9377536164253861,
+    "seq_num": 143
+  },
+  {
+    "timestamp": "2024-12-02T18:20:56.735561",
+    "task_type": 5,
+    "metric_value": 6.25,
+    "seq_num": 144
+  },
+  {
+    "timestamp": "2024-12-02T18:20:57.790543",
+    "task_type": 6,
+    "metric_value": 4,
+    "seq_num": 145
+  },
+  {
+    "timestamp": "2024-12-02T18:21:37.884111",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 146
+  },
+  {
+    "timestamp": "2024-12-02T18:21:38.037921",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 147
+  },
+  {
+    "timestamp": "2024-12-02T18:21:47.549994",
+    "task_type": 3,
+    "metric_value": 1.050232605579134,
+    "seq_num": 148
+  },
+  {
+    "timestamp": "2024-12-02T18:22:23.069748",
+    "task_type": 4,
+    "metric_value": 1.1000958417406097,
+    "seq_num": 149
+  },
+  {
+    "timestamp": "2024-12-02T18:22:27.222751",
+    "task_type": 5,
+    "metric_value": 12.132352941176471,
+    "seq_num": 150
+  },
+  {
+    "timestamp": "2024-12-02T18:22:33.297685",
+    "task_type": 6,
+    "metric_value": 5,
+    "seq_num": 151
+  },
+  {
+    "timestamp": "2024-12-02T18:23:13.401348",
+    "task_type": 0,
+    "metric_value": 12,
+    "seq_num": 152
+  },
+  {
+    "timestamp": "2024-12-02T18:23:13.583690",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 153
+  },
+  {
+    "timestamp": "2024-12-02T18:23:17.270613",
+    "task_type": 3,
+    "metric_value": 1.0501758987836236,
+    "seq_num": 154
+  },
+  {
+    "timestamp": "2024-12-02T18:23:20.720825",
+    "task_type": 4,
+    "metric_value": 0.2390746759378797,
+    "seq_num": 155
+  },
+  {
+    "timestamp": "2024-12-02T18:23:24.231606",
+    "task_type": 5,
+    "metric_value": 8.823529411764707,
+    "seq_num": 156
+  },
+  {
+    "timestamp": "2024-12-02T18:23:25.289649",
+    "task_type": 6,
+    "metric_value": 2,
+    "seq_num": 157
+  },
+  {
+    "timestamp": "2024-12-02T18:24:05.364904",
+    "task_type": 0,
+    "metric_value": 3,
+    "seq_num": 158
+  },
+  {
+    "timestamp": "2024-12-02T18:24:05.549897",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 159
+  },
+  {
+    "timestamp": "2024-12-02T18:24:09.250841",
+    "task_type": 3,
+    "metric_value": 1.050212652489834,
+    "seq_num": 160
+  },
+  {
+    "timestamp": "2024-12-02T18:24:12.996181",
+    "task_type": 4,
+    "metric_value": 0.7479358429414721,
+    "seq_num": 161
+  },
+  {
+    "timestamp": "2024-12-02T18:24:16.523079",
+    "task_type": 5,
+    "metric_value": 7.352941176470588,
+    "seq_num": 162
+  },
+  {
+    "timestamp": "2024-12-02T18:24:17.577123",
+    "task_type": 6,
+    "metric_value": 4,
+    "seq_num": 163
+  },
+  {
+    "timestamp": "2024-12-02T18:24:57.666503",
+    "task_type": 0,
+    "metric_value": 1,
+    "seq_num": 164
+  },
+  {
+    "timestamp": "2024-12-02T18:24:57.827724",
+    "task_type": 2,
+    "metric_value": 22,
+    "seq_num": 165
+  },
+  {
+    "timestamp": "2024-12-02T18:25:01.309574",
+    "task_type": 3,
+    "metric_value": 1.0501590979461417,
+    "seq_num": 166
+  },
+  {
+    "timestamp": "2024-12-02T18:25:05.086462",
+    "task_type": 4,
+    "metric_value": 0.9758977617481985,
+    "seq_num": 167
+  },
+  {
+    "timestamp": "2024-12-02T18:25:09.608665",
+    "task_type": 5,
+    "metric_value": 8.088235294117647,
+    "seq_num": 168
+  },
+  {
+    "timestamp": "2024-12-02T18:25:10.771409",
+    "task_type": 6,
+    "metric_value": 0,
+    "seq_num": 169
+  },
+  {
+    "timestamp": "2024-12-02T18:25:50.887224",
+    "task_type": 0,
+    "metric_value": 25,
+    "seq_num": 170
+  },
+  {
+    "timestamp": "2024-12-02T18:25:51.061339",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 171
+  },
+  {
+    "timestamp": "2024-12-02T18:25:55.425735",
+    "task_type": 3,
+    "metric_value": 1.0501464976708021,
+    "seq_num": 172
+  },
+  {
+    "timestamp": "2024-12-02T18:25:59.324490",
+    "task_type": 4,
+    "metric_value": 3.2378310237431487,
+    "seq_num": 173
+  },
+  {
+    "timestamp": "2024-12-02T18:26:08.486539",
+    "task_type": 5,
+    "metric_value": 7.352941176470588,
+    "seq_num": 174
+  },
+  {
+    "timestamp": "2024-12-02T18:26:09.543174",
+    "task_type": 6,
+    "metric_value": 4,
+    "seq_num": 175
+  },
+  {
+    "timestamp": "2024-12-02T18:26:54.766278",
+    "task_type": 0,
+    "metric_value": 33,
+    "seq_num": 176
+  },
+  {
+    "timestamp": "2024-12-02T18:26:54.992314",
+    "task_type": 2,
+    "metric_value": 21,
+    "seq_num": 177
+  },
+  {
+    "timestamp": "2024-12-02T18:27:01.067530",
+    "task_type": 3,
+    "metric_value": 1.05019550044013,
+    "seq_num": 178
+  },
+  {
+    "timestamp": "2024-12-02T18:27:04.529290",
+    "task_type": 4,
+    "metric_value": 1.291878193720528,
+    "seq_num": 179
+  },
+  {
+    "timestamp": "2024-12-02T18:27:13.582881",
+    "task_type": 5,
+    "metric_value": 6.985294117647059,
+    "seq_num": 180
+  },
+  {
+    "timestamp": "2024-12-02T18:27:14.665157",
+    "task_type": 6,
+    "metric_value": 2,
+    "seq_num": 181
   }
 ]

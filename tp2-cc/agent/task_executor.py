@@ -37,7 +37,7 @@ class TaskExecutor:
             self._send_alert(task_pdu.task_type, metric_value, seq_num)
             data_storage.store_alert(self.agent_id, task_pdu.task_type, metric_value, seq_num)
 
-        if metric_value != 0 and task_pdu.task_type == 6:
+        if metric_value != 0 or task_pdu.task_type == 6:
             data_storage.store_metric(self.agent_id,task_pdu.task_type,metric_value,seq_num)
 
     
@@ -86,6 +86,8 @@ class TaskExecutor:
         server_ip = payload.server_ip
         transport = payload.transport
         iperf_port = self.iperf_port
+
+        success = False
             
         try:
                 # Comando iperf3 como cliente
@@ -99,7 +101,11 @@ class TaskExecutor:
                 ]
             
                 print(f"Executando comando: {' '.join(command)}")
-                result = subprocess.run(command, capture_output=True, text=True)
+
+                while success == False:
+                    result = subprocess.run(command, capture_output=True, text=True)
+                    if result.returncode == 0:
+                        success = True
 
                 if result.returncode == 0 and transport == "TCP":
                     try:

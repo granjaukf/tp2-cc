@@ -103,28 +103,25 @@ def process_tasks(client_socket, task_executor, timeout):
             
                 # Envia ACK para a tarefa
                 if send_task_ack(client_socket, task_pdu, server_addr):
-                    task_executor.execute_task(task_pdu, seq_num)
+                    #task_executor.execute_task(task_pdu, seq_num)
                     last_task_time = time.time()
         
             except socket.timeout:
                 if time.time() - last_task_time >= 30:
-                #if time.time() - last_task_time > timeout:
-                    """print("Agente a encerrar por inatividade.")
-                    break"""
                     periodic = True
                 continue
             except Exception as e:
                 print(f"[ERRO] Erro ao processar a mensagem: {e}")
         else:
-            if i == 0:
-                print(f"Frequência: {tasks[0].freq}")
-                time.sleep(tasks[0].freq)
             task = tasks[i]
             i = i+1
             seq_num = seq_num+1
             task_executor.execute_task(task, seq_num)
             if i == length:
                 i = 0
+            if i == 0:
+                print(f"Frequência: {tasks[0].freq}")
+                time.sleep(tasks[0].freq)
 
 
 

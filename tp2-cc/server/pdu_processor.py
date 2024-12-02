@@ -76,9 +76,11 @@ def process_metric_pdu(data, addr, server_socket):
         device_id = device_id_map.get(addr[0])
 
         if not device_id:
-            print(f"[ERRO] Dispositivo não registrado para o endereço: {addr[0]}")
+            print(f"[ERRO] Dispositivo não registado para o endereço: {addr[0]}")
             print("------------------------------")
             return False
+        
+        print("\n\n\n\n\n\n\n\n\n\n")
 
         print(f"[MÉTRICA RECEBIDA] Dispositivo: {device_id}")
         print(f"  Task Type: {metric_pdu.task_type}")

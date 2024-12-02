@@ -49,12 +49,12 @@ class TaskManager:
                     print(f"[ACK RECEBIDO] ACK recebido para a tarefa seq_num {task_pdu.seq_num}\n")
                     
                     # Aguarda métrica por 30 segundos
-                    if metric_event.wait(30.0):
+                    '''if metric_event.wait(30.0):
                         print(f"[METRIC RECEIVED] Métrica recebida para a tarefa seq_num {task_pdu.seq_num}\n")
                         return True
                     else:
                         print(f"[TIMEOUT] Não recebeu métrica para a tarefa {task_pdu.seq_num}\n")
-                        return False
+                        return False'''
                 
                 print(f"[TIMEOUT] Tentativa {attempt + 1} de envio da tarefa {task_pdu.seq_num}\n")
                 time.sleep(1)
