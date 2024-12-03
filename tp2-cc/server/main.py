@@ -7,12 +7,12 @@ def start_server(task_port=12345, alert_port=12346):
     """Inicia o servidor NMS"""
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     server_socket.bind(('0.0.0.0', task_port))
-    print(f"\n[SERVER INICIADO] Escutando na porta UDP {task_port} para registros e tarefas.\n")
+    print(f"\n[SERVER INICIADO] A escutar na porta UDP {task_port} para registos e tarefas.\n")
 
     alert_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     alert_socket.bind(('0.0.0.0', alert_port))
     alert_socket.listen(5)
-    print(f"[SERVER INICIADO] Escutando na porta TCP {alert_port} para alertas.\n")
+    print(f"[SERVER INICIADO] A escutar na porta TCP {alert_port} para alertas.\n")
 
     try:
         while True:

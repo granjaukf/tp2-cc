@@ -115,56 +115,15 @@
       background-color: #d1e7f7;
     }
 
-    .icon {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      line-height: 20px;
-      border-radius: 50%;
-      color: white;
-      font-size: 12px;
-      font-weight: bold;
-      transition: transform 0.3s ease;
-    }
-
-    .icon.metric {
-      background-color: #28a745;
-    }
-
-    .icon.alert {
-      background-color: #dc3545;
-    }
-
     .metric-value {
       font-weight: bold;
     }
-
-    footer {
-      background-color: #0062cc;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 1.1em;
-    }
-
-    footer .footer-bar {
-      height: 4px;
-      background-color: #0056b3;
-      margin-top: 10px;
-    }
-
   </style>
 </head>
 <body>
   <header>
     <h1>Monitorização de Redes Distribuídas</h1>
-    <p>Soluções inovadoras para gerir e otimizar suas redes</p>
+    <p>Soluções inovadoras para gerir e otimizar as suas redes</p>
   </header>
 
   <main>
@@ -181,7 +140,6 @@
     <table id="dataTable" class="hidden">
       <thead>
         <tr>
-          <th>Ícone</th>
           <th>PC</th>
           <th>Seq Num</th>
           <th>Timestamp</th>
@@ -192,11 +150,6 @@
       <tbody></tbody>
     </table>
   </main>
-
-  <footer>
-    <p>&copy; 2024 <span style="color: #ffcc00;">Monitorização de Redes Distribuídas</span>. Todos os direitos reservados.</p>
-    <div class="footer-bar"></div>
-  </footer>
 
   <script>
     const jsonFileInput = document.getElementById('jsonFileInput');
@@ -291,7 +244,6 @@
         const formattedMetric = formatMetricValue(item.task_type, item.metric_value);
 
         row.innerHTML = `
-          <td><span class="icon ${isAlert ? 'alert' : 'metric'}">${isAlert ? 'A' : 'M'}</span></td>
           <td>${pcName}</td>
           <td>${item.seq_num}</td>
           <td>${item.timestamp}</td>

@@ -9,7 +9,7 @@ from msg_type.ack_pdu import AckPDU
 from msg_type.nettask_pdu import NetTaskPDU
 
 def start_agent(host,port=12345, alert_port=12346,task_port=12345,iperf_port = 5202,timeout=120):
-    "Inicia o agente e gere sua execução"
+    "Inicia o agente e gere a sua execução"
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     client_socket.bind(('0.0.0.0',0))
     client_socket.settimeout(5)
@@ -32,7 +32,7 @@ def start_agent(host,port=12345, alert_port=12346,task_port=12345,iperf_port = 5
         
 def start_iperf_server(iperf_port):
     """Inicia o servidor iperf em modo servidor."""
-    print(f"[IPERF] Iniciando servidor iperf na porta {iperf_port}...")
+    print(f"[IPERF] A iniciar servidor iperf na porta {iperf_port}...")
     try:
         command = ["iperf3", "-s", "-p", str(iperf_port)]
         subprocess.Popen(command,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -42,7 +42,7 @@ def start_iperf_server(iperf_port):
         print("[ERROR] iperf3 não está instalado. Verifique a instalação.")
 
 def register_agent(client_socket, agent_id, server_address):
-    """Registra o agente no servidor"""
+    """Regista o agente no servidor"""
     print("------------------------------")
     print(f"[A INICIAR REGISTO] Agente: {agent_id}")
     print("------------------------------")
@@ -53,7 +53,7 @@ def register_agent(client_socket, agent_id, server_address):
     packed_register = register_message.pack()
 
     while attempts < max_attempts:
-        print(f"[TENTATIVA {attempts + 1}] Enviando Register PDU com seq_num {seq_num}")
+        print(f"[TENTATIVA {attempts + 1}] A enviar Register PDU com seq_num {seq_num}")
         client_socket.sendto(packed_register, server_address)
         
         try:
@@ -64,7 +64,7 @@ def register_agent(client_socket, agent_id, server_address):
                 print("------------------------------")
                 return True
         except socket.timeout:
-            print(f"[TIMEOUT] Nenhum ACK recebido. Tentando novamente...")
+            print(f"[TIMEOUT] Nenhum ACK recebido. A tentar novamente...")
 
         attempts += 1
         seq_num = sequence_manager.get_next_seq_num(agent_id, 1)
@@ -120,7 +120,7 @@ def process_tasks(client_socket, task_executor, timeout):
             if i == length:
                 i = 0
             if i == 0:
-                print(f"Frequência: {tasks[0].freq}")
+                """print(f"Frequência: {tasks[0].freq}")"""
                 time.sleep(tasks[0].freq)
 
 
@@ -129,7 +129,7 @@ def process_tasks(client_socket, task_executor, timeout):
 def send_task_ack(client_socket, task_pdu, server_addr):
     """Envia ACK para uma tarefa recebida"""
     print("------------------------------")
-    print(f"[ENVIANDO ACK] Seq_num: {task_pdu.seq_num}")
+    print(f"[A ENVIAR ACK] Seq_num: {task_pdu.seq_num}")
     print("------------------------------")
     
     try:

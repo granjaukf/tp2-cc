@@ -23,7 +23,7 @@ class TaskExecutor:
     def execute_task(self, task_pdu, seq_num):
         """Executa uma tarefa e envia os resultados"""
         print("------------------------------")
-        print(f"[EXECUTANDO TAREFA] Seq_num: {task_pdu.seq_num}")
+        print(f"[A EXECUTAR TAREFA] Seq_num: {task_pdu.seq_num}")
         print(f"  Tipo: {task_pdu.task_type}")
         print("------------------------------")
     
@@ -79,7 +79,7 @@ class TaskExecutor:
         """Executa o iperf e retorna tupla (bandwidth, jitter, packet_loss)"""
         
         if payload.mode == "server":
-            print("[IPERF] Executar no modo servidor não executa o comando cliente.\n")
+            print("[IPERF] Executar no modo servidor, não executa o comando cliente.\n")
             time.sleep(5)
             return (0,0,0)
         
@@ -100,7 +100,7 @@ class TaskExecutor:
                     "--json"
                 ]
             
-                print(f"Executando comando: {' '.join(command)}")
+                print(f"A executar comando: {' '.join(command)}")
 
                 while success == False:
                     result = subprocess.run(command, capture_output=True, text=True)
@@ -164,31 +164,6 @@ class TaskExecutor:
         else:
             print(f"[ERROR] Comando ping falhou: {result.stderr}")
         return 0
-
-        
-    def _execute_interfaces_task(self, payload):
-        """Executa a tarefa para coletar estatísticas de pacotes da interface"""
-        interface_name = payload.interface_name.strip()
-        path = f"/sys/class/net/{interface_name}/statistics/rx_packets"
-        print(f"[DEBUG] Verificando estatísticas da interface: {path}")
-
-        try:
-            with open(path, "r") as file:
-                rx_packets = int(file.read().strip())
-                print(f"[INTERFACE STATS] Interface: {interface_name} | RX Packets: {rx_packets}")
-                return rx_packets
-        except FileNotFoundError:
-            print(f"[ERROR] Arquivo {path} não encontrado. Verifique se a interface {interface_name} existe.")
-            return 0
-        except PermissionError:
-            print(f"[ERROR] Permissão negada para acessar {path}. Execute o programa com privilégios suficientes.")
-            return 0
-        except ValueError:
-            print(f"[ERROR] Valor inválido ao tentar ler RX packets da interface {interface_name}.")
-            return 0
-        except Exception as e:
-            print(f"[ERROR] Falha ao coletar estatísticas da interface {interface_name}: {e}")
-            return 0
         
     def _execute_pps_task(self, payload):
         interface = payload.interface_name.strip()
@@ -202,13 +177,15 @@ class TaskExecutor:
             pacotes_recebidos_anterior = dados_iniciais.packets_recv
 
             while True:
-                time.sleep(1)
+                time.sleep(5)
                 # Obter dados atuais
                 dados_atual = psutil.net_io_counters(pernic=True).get(interface)
                 pacotes_recebidos_atual = dados_atual.packets_recv
 
                 # Calcular a diferença
-                pacotes_por_segundo = (pacotes_recebidos_atual - pacotes_recebidos_anterior)
+                pacotes_por_segundo = (pacotes_recebidos_atual - pacotes_recebidos_anterior)/5
+
+                pacotes_por_segundo = int(pacotes_por_segundo)
 
                 print(f"Pacotes recebidos por segundo: {pacotes_por_segundo:.2f}")
 
@@ -232,7 +209,7 @@ class TaskExecutor:
             # Arredonda o valor da métrica
             rounded_value = round(metric_value, 3)
 
-            # Cria a PDU da métrica
+            # Cria o PDU da métrica
             metric_pdu = MetricPDU(
                 msg_type=3,
                 seq_num=seq_num,
@@ -240,14 +217,14 @@ class TaskExecutor:
                 metric_value=rounded_value
             )
 
-            # Envia a métrica usando o socket
+            # Envia a métrica através do socket
             with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as metric_socket:
                 attempt = 0
                 max_attempts = 3
                 while attempt < max_attempts:
                     try:
                         metric_socket.settimeout(5)
-                        print(f"\n[METRIC SENT] Enviando métrica para o servidor")
+                        print(f"\n[METRIC SENT] A enviar métrica para o servidor")
                         print(f"  Task type: {metric_pdu.task_type}")
                         print(f"  Metric value: {metric_pdu.metric_value}")
                         print(f"  Seq num: {metric_pdu.seq_num}\n")
@@ -287,24 +264,6 @@ class TaskExecutor:
             with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as alert_socket:
                 alert_socket.connect((self.server_ip, self.alert_port))
                 alert_socket.sendall(alert_pdu.pack())
-                print(f"Alerta enviado ao servidor com seq_num {alert_pdu.seq_num}")
-            
-                # Aguarda ACK do servidor
-                """ try:
-                    alert_socket.settimeout(5)
-                    ack_data = alert_socket.recv(1024)
-                    ack_message = AckPDU.unpack(ack_data)
-                
-                    if ack_message.seq_num == alert_pdu.seq_num:
-                        print(f"[ACK RECEIVED] ACK recebido para o alerta")
-                        print(f"  Seq num: {ack_message.seq_num}\n")
-                    else:
-                        print(f"[ERRO] ACK recebido com seq_num incorreto")
-                    
-                except socket.timeout:
-                    print("[TIMEOUT] Não recebeu ACK para o alerta")"""
-              
+                print(f"Alerta enviado ao servidor com seq_num {alert_pdu.seq_num}")  
         except Exception as e:
-            print(f"Erro ao enviar o alerta: {e}") 
-
-            
+            print(f"Erro ao enviar o alerta: {e}")

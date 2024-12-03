@@ -8,7 +8,7 @@ class DataStorage:
         self._ensure_directories()
         
     def _ensure_directories(self):
-        """Garante que os diretórios necessários existem"""
+        """Garante que as diretorias necessárias existem"""
         directories = [
             self.base_dir,
             os.path.join(self.base_dir, "metrics"),
@@ -63,10 +63,9 @@ class DataStorage:
             file_data.append(data)
             
             with open(filename, 'w') as f:
-                json.dump(file_data, f, indent=2)  # Usando dump em vez de dumps
+                json.dump(file_data, f, indent=2)
                 
         except Exception as e:
             print(f"[ERRO] Falha ao armazenar dados: {e}")
 
-# Instância global do armazenamento de dados
 data_storage = DataStorage()

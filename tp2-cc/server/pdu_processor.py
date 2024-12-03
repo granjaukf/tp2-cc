@@ -43,13 +43,13 @@ def process_register_pdu(data, addr, server_socket):
 def process_ack_pdu(data, addr, server_socket):
     """Processa PDUs de confirmação"""
     print("------------------------------")
-    print("[PROCESSANDO ACK]")
+    print("[A PROCESSAR ACK]")
     try:
         ack_message = AckPDU.unpack(data)
         device_id = device_id_map.get(addr[0])
 
         if not device_id:
-            print(f"[ERRO] Dispositivo não registrado para o endereço: {addr[0]}")
+            print(f"[ERRO] Dispositivo não registado para o endereço: {addr[0]}")
             print("------------------------------")
             return False
 
@@ -70,7 +70,7 @@ def process_ack_pdu(data, addr, server_socket):
 def process_metric_pdu(data, addr, server_socket):
     """Processa PDUs de métricas"""
     print("------------------------------")
-    print("[PROCESSANDO MÉTRICA]")
+    print("[A PROCESSAR MÉTRICA]")
     try:
         metric_pdu = MetricPDU.unpack(data)
         device_id = device_id_map.get(addr[0])
@@ -79,8 +79,6 @@ def process_metric_pdu(data, addr, server_socket):
             print(f"[ERRO] Dispositivo não registado para o endereço: {addr[0]}")
             print("------------------------------")
             return False
-        
-        print("\n\n\n\n\n\n\n\n\n\n")
 
         print(f"[MÉTRICA RECEBIDA] Dispositivo: {device_id}")
         print(f"  Task Type: {metric_pdu.task_type}")
@@ -105,7 +103,7 @@ def process_metric_pdu(data, addr, server_socket):
 def process_alert_pdu(data, addr, server_socket=None):
     """Processa PDUs de alerta"""
     print("------------------------------")
-    print("[PROCESSANDO ALERTA]")
+    print("[A PROCESSAR ALERTA]")
     try:
         alert_pdu = AlertPDU.unpack(data)
         device_id = device_id_map.get(addr[0])
