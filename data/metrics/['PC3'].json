@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2024-12-03T09:13:41.252278",
+    "task_type": 1,
+    "metric_value": 71,
+    "seq_num": 8
+  },
+  {
+    "timestamp": "2024-12-03T09:13:41.332062",
+    "task_type": 2,
+    "metric_value": 11,
+    "seq_num": 9
+  },
+  {
+    "timestamp": "2024-12-03T09:13:44.720208",
+    "task_type": 3,
+    "metric_value": 1.0502014510877826,
+    "seq_num": 10
+  },
+  {
+    "timestamp": "2024-12-03T09:13:48.494526",
+    "task_type": 4,
+    "metric_value": 0.31059042834935846,
+    "seq_num": 11
+  },
+  {
+    "timestamp": "2024-12-03T09:13:51.836435",
+    "task_type": 5,
+    "metric_value": 1.4705882352941178,
+    "seq_num": 12
+  },
+  {
+    "timestamp": "2024-12-03T09:13:56.854653",
+    "task_type": 6,
+    "metric_value": 0,
+    "seq_num": 13
+  },
+  {
+    "timestamp": "2024-12-03T09:14:16.884403",
+    "task_type": 1,
+    "metric_value": 71,
+    "seq_num": 14
+  },
+  {
+    "timestamp": "2024-12-03T09:14:16.983752",
+    "task_type": 2,
+    "metric_value": 11,
+    "seq_num": 15
+  },
+  {
+    "timestamp": "2024-12-03T09:14:27.222070",
+    "task_type": 3,
+    "metric_value": 1.050221753804946,
+    "seq_num": 16
+  },
+  {
+    "timestamp": "2024-12-03T09:14:30.734575",
+    "task_type": 4,
+    "metric_value": 0.39452303532730426,
+    "seq_num": 17
+  },
+  {
+    "timestamp": "2024-12-03T09:14:34.104291",
+    "task_type": 5,
+    "metric_value": 1.4705882352941178,
+    "seq_num": 18
+  },
+  {
+    "timestamp": "2024-12-03T09:14:39.121856",
+    "task_type": 6,
+    "metric_value": 0,
+    "seq_num": 19
+  },
+  {
+    "timestamp": "2024-12-03T09:14:59.155581",
+    "task_type": 1,
+    "metric_value": 71,
+    "seq_num": 20
+  },
+  {
+    "timestamp": "2024-12-03T09:14:59.226083",
+    "task_type": 2,
+    "metric_value": 10,
+    "seq_num": 21
+  },
+  {
+    "timestamp": "2024-12-03T09:15:10.477242",
+    "task_type": 3,
+    "metric_value": 1.050239956908419,
+    "seq_num": 22
+  },
+  {
+    "timestamp": "2024-12-03T09:15:13.777590",
+    "task_type": 4,
+    "metric_value": 0.2930198389665273,
+    "seq_num": 23
+  },
+  {
+    "timestamp": "2024-12-03T09:15:17.083381",
+    "task_type": 5,
+    "metric_value": 0.36764705882352944,
+    "seq_num": 24
+  },
+  {
+    "timestamp": "2024-12-03T09:15:22.103925",
+    "task_type": 6,
+    "metric_value": 0,
+    "seq_num": 25
+  },
+  {
+    "timestamp": "2024-12-03T09:15:42.138517",
+    "task_type": 1,
+    "metric_value": 73,
+    "seq_num": 26
+  },
+  {
+    "timestamp": "2024-12-03T09:15:42.209132",
+    "task_type": 2,
+    "metric_value": 10,
+    "seq_num": 27
+  }
+]
