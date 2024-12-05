@@ -66,7 +66,6 @@ class TaskExecutor:
             if task_type == 5:
                 metric_value = metrics[2]
         elif task_type == 6:
-            #metric_value = self._execute_interfaces_task(task_pdu.payload)
             metric_value = self._execute_pps_task(task_pdu.payload)
     
             
@@ -76,73 +75,68 @@ class TaskExecutor:
     
     def _execute_iperf_metrics(self, payload):
         """Executa o iperf e retorna tupla (bandwidth, jitter, packet_loss)"""
-        
+
         if payload.mode == "server":
             print("[IPERF] Executar no modo servidor, não executa o comando cliente.\n")
             time.sleep(5)
-            return (0,0,0)
-        
+            return (0, 0, 0)
+
         server_ip = payload.server_ip
         transport = payload.transport
         iperf_port = self.iperf_port
 
         success = False
-            
+
         try:
-                # Comando iperf3 como cliente
-                command = [
-                    "iperf3",
-                    "-c", server_ip,
-                    "-p", str(iperf_port),
-                    "-u" if transport == "UDP" else "",
-                    "-t", "3",  # Test duration
-                    "--json"
-                ]
-            
-                print(f"A executar comando: {' '.join(command)}")
+            command = [
+                "iperf3",
+                "-c", server_ip,
+                "-p", str(iperf_port),
+            ]
+            if transport == "UDP":
+                command.append("-u")
+            command.extend(["-t", "3", "--json"])
 
-                while success == False:
-                    result = subprocess.run(command, capture_output=True, text=True)
-                    if result.returncode == 0:
-                        success = True
+            print(f"[IPERF] A executar comando: {' '.join(command)}")
 
-                if result.returncode == 0 and transport == "TCP":
-                    try:
-                        data = json.loads(result.stdout)
-    
-                        bandwidth = data["end"]["sum_sent"]["bits_per_second"] / 1_000_000  # Convert to Mbps
-                        print(f"Bandwidth: {bandwidth:.2f} Mbps")
-                        return (bandwidth, 0, 0)
-                    except (KeyError, ValueError) as e:
-                        print(f"[ERROR] Falha ao processar resultado do iperf: {e}")
-                        return (0, 0, 0)
+            while not success:
+                result = subprocess.run(command, capture_output=True, text=True, timeout=10)
 
                 if result.returncode == 0:
-                    try:
-                        data = json.loads(result.stdout)
-                        udp_data = data["end"]["streams"][0]["udp"]
-                    
-                        bandwidth = udp_data["bits_per_second"] / 1_000_000  # Convert to Mbps
-                        jitter = udp_data["jitter_ms"]
-                        packet_loss = udp_data["lost_percent"]
-                    
-                        print(f"[IPERF RESULTS]")
-                        print(f"  Bandwidth: {bandwidth:.2f} Mbps")
-                        print(f"  Jitter: {jitter:.2f} ms")
-                        print(f"  Packet Loss: {packet_loss:.2f}%")
-                    
-                        return (bandwidth, jitter, packet_loss)
-                    except (KeyError, ValueError) as e:
-                        print(f"[ERROR] Falha ao processar resultado do iperf: {e}")
-                        return (0, 0, 0)
-                else:
-                    print(f"[ERROR] iperf3 falhou com código {result.returncode}")
-                    print(f"Stderr: {result.stderr}")
-                    return (0, 0, 0)
-                
+                    success = True
+                    data = json.loads(result.stdout)
+                    if transport == "TCP":
+                        try:
+                            bandwidth = data["end"]["sum_sent"]["bits_per_second"] / 1_000_000  # Converte para Mbps
+                            print(f"[IPERF RESULTS] Bandwidth: {bandwidth:.2f} Mbps")
+                            return (bandwidth, 0, 0)
+                        except (KeyError, ValueError) as e:
+                            print(f"[ERROR] Falha ao processar resultado TCP: {e}")
+                            return (0, 0, 0)
+                    elif transport == "UDP":
+                        try:
+                            udp_data = data["end"]["streams"][0]["udp"]
+                            bandwidth = udp_data["bits_per_second"] / 1_000_000  # Converte para Mbps
+                            jitter = udp_data["jitter_ms"]
+                            packet_loss = udp_data["lost_percent"]
+
+                            print(f"[IPERF RESULTS]")
+                            print(f"  Bandwidth: {bandwidth:.2f} Mbps")
+                            print(f"  Jitter: {jitter:.2f} ms")
+                            print(f"  Packet Loss: {packet_loss:.2f}%")
+
+                            return (bandwidth, jitter, packet_loss)
+                        except (KeyError, ValueError) as e:
+                            print(f"[ERROR] Falha ao processar resultado UDP: {e}")
+                            return (0, 0, 0)
+
+            print("[ERROR] Todas as tentativas de iperf3 falharam.")
+            return (0, 0, 0)
+
         except Exception as e:
             print(f"[ERROR] Exceção ao executar iperf: {e}")
             return (0, 0, 0)
+
     
     
     def _execute_ping_task(self, payload):

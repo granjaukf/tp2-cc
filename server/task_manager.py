@@ -33,29 +33,20 @@ class TaskManager:
             self._pending_metrics[(device_id, task_pdu.seq_num)] = metric_event
 
         try:
-            for attempt in range(3):
+            for attempt in range(6):
                 print(f"\n[TASK ENVIADA] Para {device_id} no endereço {agent_addr}")
                 print(f"  Tarefa seq_num: {task_pdu.seq_num}\n")
                 
                 server_socket.sendto(packed_task, agent_addr)
                 
-                # Aguarda ACK por 5 segundos
-                if ack_event.wait(5.0):
+                # Aguarda ACK por 3 segundos
+                if ack_event.wait(3.0):
                     with self._lock:
-                        key = (device_id, task_pdu.seq_num)  # Crie a chave que deseja verificar
+                        key = (device_id, task_pdu.seq_num)
                         if key in self._pending_metrics:
                             print("[DUP] Pacote Duplicado\n")
                             return True
                     print(f"[ACK RECEBIDO] ACK recebido para a tarefa seq_num {task_pdu.seq_num}\n")
-                    
-                    # Aguarda métrica por 30 segundos
-                    '''if metric_event.wait(30.0):
-                        print(f"[METRIC RECEIVED] Métrica recebida para a tarefa seq_num {task_pdu.seq_num}\n")
-                        return True
-                    else:
-                        print(f"[TIMEOUT] Não recebeu métrica para a tarefa {task_pdu.seq_num}\n")
-                        return False'''
-                
                 print(f"[TIMEOUT] Tentativa {attempt + 1} de envio da tarefa {task_pdu.seq_num}\n")
                 time.sleep(1)
             

@@ -61,7 +61,7 @@ def register_agent(client_socket, agent_id, server_address):
     print(f"[A INICIAR REGISTO] Agente: {agent_id}")
     print("------------------------------")
     attempts = 0
-    max_attempts = 5
+    max_attempts = 6
     seq_num = sequence_manager.get_next_seq_num(agent_id, 1)
     register_message = RegisterPDU(0, seq_num, agent_id)
     packed_register = register_message.pack()
@@ -99,7 +99,6 @@ def process_tasks(client_socket, task_executor):
 
     
     while True:
-        #if len(tasks) < 7:
         if periodic == False:
             try:
                 # Recebe a tarefa
@@ -134,7 +133,6 @@ def process_tasks(client_socket, task_executor):
             if i == length:
                 i = 0
             if i == 0:
-                """print(f"Frequência: {tasks[0].freq}")"""
                 time.sleep(tasks[0].freq)
 
 
